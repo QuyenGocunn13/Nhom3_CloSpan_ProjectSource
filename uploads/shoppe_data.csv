@@ -1,0 +1,79 @@
+user_id,order_id,product_name,category,timestamp
+U001,O1001,Áo thun nam,Thời trang nam,2024-01-05 09:00:00
+U001,O1002,Quần jeans,Thời trang nam,2024-01-15 14:30:00
+U001,O1003,Giày sneaker trắng,Giày dép,2024-02-10 10:00:00
+U001,O1004,Đồng hồ Casio,Phụ kiện,2024-03-20 15:00:00
+U001,O1005,Tai nghe Bluetooth,Phụ kiện,2024-04-15 11:00:00
+U001,O1006,Balo laptop,Túi & Balo,2024-06-10 13:00:00
+U002,O1007,Áo thun nam,Thời trang nam,2024-01-07 11:00:00
+U002,O1008,Quần jeans,Thời trang nam,2024-01-18 13:00:00
+U002,O1009,Giày sneaker trắng,Giày dép,2024-02-15 09:30:00
+U002,O1010,Đồng hồ Casio,Phụ kiện,2024-03-25 16:00:00
+U002,O1011,Tai nghe Bluetooth,Phụ kiện,2024-04-20 10:00:00
+U002,O1012,Sữa rửa mặt Hada Labo,Làm đẹp,2024-07-10 12:00:00
+U003,O1013,Áo thun nam,Thời trang nam,2024-02-01 10:00:00
+U003,O1014,Quần jeans,Thời trang nam,2024-02-15 12:00:00
+U003,O1015,Giày sneaker trắng,Giày dép,2024-03-10 14:00:00
+U003,O1016,Đồng hồ Casio,Phụ kiện,2024-04-20 15:30:00
+U003,O1017,Tai nghe Bluetooth,Phụ kiện,2024-05-15 11:00:00
+U003,O1018,Ốp lưng iPhone,Phụ kiện,2024-08-10 13:00:00
+U004,O1019,Điện thoại iPhone,Điện tử,2024-01-10 09:00:00
+U004,O1020,Ốp lưng iPhone,Phụ kiện,2024-01-20 10:00:00
+U004,O1021,Tai nghe Bluetooth,Phụ kiện,2024-02-15 11:00:00
+U004,O1022,Áo thun nam,Thời trang nam,2024-06-10 12:00:00
+U004,O1023,Quần jeans,Thời trang nam,2024-06-20 13:00:00
+U005,O1024,Điện thoại iPhone,Điện tử,2024-02-20 14:00:00
+U005,O1025,Ốp lưng iPhone,Phụ kiện,2024-03-01 15:00:00
+U005,O1026,Tai nghe Bluetooth,Phụ kiện,2024-03-15 16:00:00
+U005,O1027,Giày thể thao Nike,Giày dép,2024-07-10 09:00:00
+U005,O1028,Bộ đồ thể thao,Thể thao,2024-07-20 10:00:00
+U006,O1029,Điện thoại iPhone,Điện tử,2024-03-15 11:00:00
+U006,O1030,Ốp lưng iPhone,Phụ kiện,2024-03-25 12:00:00
+U006,O1031,Tai nghe Bluetooth,Phụ kiện,2024-04-10 13:00:00
+U006,O1032,Laptop Dell,Điện tử,2024-09-05 14:00:00
+U007,O1033,Sữa rửa mặt Hada Labo,Làm đẹp,2024-01-25 09:00:00
+U007,O1034,Son 3CE màu đỏ gạch,Trang điểm,2024-02-05 10:00:00
+U007,O1035,Phấn nền Maybelline,Trang điểm,2024-03-10 11:00:00
+U007,O1036,Áo khoác nữ,Thời trang nữ,2024-06-15 12:00:00
+U008,O1037,Sữa rửa mặt Hada Labo,Làm đẹp,2024-02-10 13:00:00
+U008,O1038,Son 3CE màu đỏ gạch,Trang điểm,2024-02-20 14:00:00
+U008,O1039,Túi xách nữ,Thời trang nữ,2024-07-10 15:00:00
+U009,O1040,Sữa rửa mặt Hada Labo,Làm đẹp,2024-03-05 16:00:00
+U009,O1041,Son 3CE màu đỏ gạch,Trang điểm,2024-03-15 17:00:00
+U009,O1042,Giày cao gót,Giày dép,2024-08-10 09:00:00
+U010,O1043,Giày thể thao Nike,Giày dép,2024-01-15 10:00:00
+U010,O1044,Bộ đồ thể thao,Thể thao,2024-01-25 11:00:00
+U010,O1045,Áo thun nam,Thời trang nam,2024-05-10 12:00:00
+U010,O1046,Quần jeans,Thời trang nam,2024-05-20 13:00:00
+U011,O1047,Giày thể thao Nike,Giày dép,2024-02-20 14:00:00
+U011,O1048,Bộ đồ thể thao,Thể thao,2024-03-01 15:00:00
+U011,O1049,Đồng hồ Casio,Phụ kiện,2024-07-15 16:00:00
+U012,O1050,Giày thể thao Nike,Giày dép,2024-03-10 17:00:00
+U012,O1051,Bộ đồ thể thao,Thể thao,2024-03-20 09:00:00
+U012,O1052,Balo chống sốc,Túi & Balo,2024-08-10 10:00:00
+U013,O1053,Áo sơ mi nam,Thời trang nam,2024-01-20 11:00:00
+U013,O1054,Quần tây nam,Thời trang nam,2024-02-01 12:00:00
+U013,O1055,Giày sneaker Adidas,Giày dép,2024-06-15 13:00:00
+U014,O1056,Bàn phím cơ,Ráp & Sửa chữa,2024-02-05 14:00:00
+U014,O1057,Chuột không dây,Phụ kiện,2024-02-15 15:00:00
+U014,O1058,Laptop Dell,Điện tử,2024-07-20 16:00:00
+U015,O1059,Bàn làm việc,Gia dụng,2024-03-10 17:00:00
+U015,O1060,Đèn bàn LED,Gia dụng,2024-03-20 09:00:00
+U015,O1061,Thảm trải sàn,Gia dụng,2024-08-15 10:00:00
+U016,O1062,Son môi MAC,Trang điểm,2024-01-15 11:00:00
+U016,O1063,Phấn nền Maybelline,Trang điểm,2024-01-25 12:00:00
+U016,O1064,Túi xách nữ,Thời trang nữ,2024-06-10 13:00:00
+U017,O1065,Điện thoại Samsung,Điện tử,2024-02-20 14:00:00
+U017,O1066,Ốp lưng Samsung,Phụ kiện,2024-03-01 15:00:00
+U017,O1067,Tai nghe Bluetooth,Phụ kiện,2024-07-15 16:00:00
+U018,O1068,Áo hoodie,Thời trang nam,2024-03-10 17:00:00
+U018,O1069,Quần thể thao,Thể thao,2024-03-20 09:00:00
+U018,O1070,Giày sneaker trắng,Giày dép,2024-08-10 10:00:00
+U019,O1071,Áo thun nam,Thời trang nam,2024-01-10 11:00:00
+U019,O1072,Quần jeans,Thời trang nam,2024-01-20 12:00:00
+U019,O1073,Giày sneaker trắng,Giày dép,2024-02-15 13:00:00
+U019,O1074,Đồng hồ Casio,Phụ kiện,2024-03-10 14:00:00
+U020,O1075,Áo thun nam,Thời trang nam,2024-02-05 15:00:00
+U020,O1076,Quần jeans,Thời trang nam,2024-02-15 16:00:00
+U020,O1077,Giày sneaker trắng,Giày dép,2024-03-20 17:00:00
+U020,O1078,Đồng hồ Casio,Phụ kiện,2024-04-10 09:00:00

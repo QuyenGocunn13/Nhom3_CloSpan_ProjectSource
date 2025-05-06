@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phân tích hành vi mua sắm trực tuyến</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Phân tích hành vi mua sắm trực tuyến</h1>
+
+        <h2>Giới thiệu thuật toán CloSpan</h2>
+        <p>
+            CloSpan (Closed Sequential Pattern Mining) là thuật toán dùng để khai thác các mẫu tuần tự đóng trong cơ sở dữ liệu chuỗi. 
+            Các mẫu tuần tự đóng cung cấp thông tin quan trọng về hành vi lặp lại của người dùng mà không gây trùng lặp, giúp giảm số lượng mẫu cần phân tích mà vẫn giữ nguyên tính đại diện.
+        </p>
+
+        <h2>Hướng dẫn sử dụng</h2>
+        <p>Để sử dụng công cụ này, bạn cần chuẩn bị một file CSV với định dạng sau:</p>
+        <ul>
+            <li>Mỗi dòng là một giao dịch tuần tự của một khách hàng.</li>
+            <li>Các mục hàng hóa trong cùng một lần mua (itemset) được ngăn cách bằng dấu phẩy <code>,</code>.</li>
+            <li>Các lần mua khác nhau trong cùng một chuỗi được ngăn cách bằng dấu chấm phẩy <code>;</code>.</li>
+            <li>File cần bao gồm các cột sau:
+                <ul>
+                    <li><strong>user_id</strong>: Mã người dùng (ví dụ: U001).</li>
+                    <li><strong>order_id</strong>: Mã đơn hàng (ví dụ: O1001).</li>
+                    <li><strong>product_name</strong>: Tên sản phẩm (ví dụ: Áo thun nam).</li>
+                    <li><strong>category</strong>: Danh mục sản phẩm (ví dụ: Thời trang nam).</li>
+                    <li><strong>timestamp</strong>: Thời gian mua hàng (ví dụ: 2024-01-05 09:00:00).</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p><strong>Ví dụ về một số dòng dữ liệu:</strong></p>
+        <pre>
+user_id,order_id,product_name,category,timestamp
+U001,O1001,Áo thun nam,Thời trang nam,2024-01-05 09:00:00
+U001,O1002,Quần jeans,Thời trang nam,2024-01-15 14:30:00
+U002,O1007,Áo thun nam,Thời trang nam,2024-01-07 11:00:00
+        </pre>
+
+        <p>Sau khi chọn file, hãy nhập giá trị <strong>minsup</strong> (ngưỡng hỗ trợ tối thiểu) — là số lần tối thiểu mà một mẫu phải xuất hiện để được xem xét.</p>
+
+        <form method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file">Tải lên file CSV:</label>
+                <input type="file" id="file" name="file" accept=".csv" required>
+            </div>
+            <div class="form-group">
+                <label for="minsup">Nhập minsup (hỗ trợ tối thiểu):</label>
+                <input type="number" id="minsup" name="minsup" step="1" min="1" required>
+            </div>
+            <input type="submit" value="Tìm mẫu tuần tự đóng" class="submit-btn">
+        </form>
+
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+
+        {% if patterns is not none %}
+            {% if patterns %}
+                <h2>Các mẫu tuần tự đóng trong hành vi mua sắm:</h2>
+                <table>
+                    <tr>
+                        <th>Mẫu tuần tự</th>
+                        <th>Tần suất</th>
+                    </tr>
+                    {% for pattern, count in patterns.items() %}
+                        <tr>
+                            <td>
+                                {% for itemset in pattern %}
+                                    {{ itemset | join(', ') }}
+                                    {% if not loop.last %} → {% endif %}
+                                {% endfor %}
+                            </td>
+                            <td>{{ count }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            {% else %}
+                <p>Không tìm thấy mẫu tuần tự đóng nào với minsup = {{ request.form['minsup'] }}.</p>
+            {% endif %}
+        {% endif %}
+    </div>
+</body>
+</html>

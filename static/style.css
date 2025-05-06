@@ -1,0 +1,195 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 960px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+h2 {
+    color: #1e90ff;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 26px;
+    border-left: 4px solid #1e90ff;
+    padding-left: 10px;
+}
+
+/* Đoạn mô tả */
+p {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Danh sách */
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 16px;
+}
+
+.form-group input[type="file"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #1e90ff;
+    outline: none;
+}
+
+/* Nút */
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #1c86ee;
+    transform: scale(1.02);
+}
+
+/* Thông báo lỗi */
+.error {
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Bảng kết quả */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+
+th {
+    background-color: #1e90ff;
+    color: #fff;
+    font-size: 18px;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f9fc;
+}
+
+tr:hover {
+    background-color: #eef5fc;
+}
+
+td:first-child {
+    max-width: 620px;
+    word-wrap: break-word;
+    white-space: normal;
+    font-size: 16px;
+}
+
+td:last-child {
+    text-align: center;
+    width: 100px;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .form-group input[type="file"],
+    .form-group input[type="number"],
+    .submit-btn {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    td:first-child {
+        max-width: 100%;
+    }
+}
